@@ -1,0 +1,179 @@
+/* Write your CSS here */
+.bg {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 5vw;
+  font-family: Roboto;
+}
+
+.Welcome {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  height: 25vh;
+  padding: 2vw;
+  border-radius: 1em;
+  font-family: Roboto;
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Roboto;
+}
+
+.tab {
+  height: 15vh;
+  width: 25vw;
+  border-radius: 1em;
+  margin: 5vw;
+  padding: 1em;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.balanceTab {
+  background-color: #cffafe;
+}
+
+.incomeTab {
+  background-color: #06b6d4;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #06b6d4;
+}
+
+.expensesTab {
+  background-color: #7c3aed;
+}
+
+.image1 {
+  height: 3em;
+  margin-right: 1vw;
+}
+.tabName {
+  font-family: Roboto;
+  font-size: 1em;
+}
+
+.displayAmount {
+  font-size: 1em;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5vw;
+}
+
+.transactionForm {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-color: #7e858e;
+  border-width: 1px;
+  padding: 3vw;
+  border-radius: 2em;
+}
+
+.label {
+  font-size: 1em;
+  color: #7e858e;
+}
+
+.title {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  color: #1e293b;
+  padding-left: 1vw;
+  width: 15vw;
+}
+
+.amount {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  color: #1e293b;
+  padding-left: 1vw;
+  width: 15vw;
+}
+
+.transactionType {
+  height: 2em;
+  width: 15vw;
+}
+
+.addButton {
+  height: 5vh;
+  width: 5vw;
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-family: Roboto;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 2vh;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7e858e;
+  border-radius: 2em;
+  min-height: 30vh;
+  min-width: 32vw;
+  padding: 1vw;
+}
+
+.columnDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7e858e;
+  padding: none;
+}
+
+.historyList {
+  list-style-type: none;
+}
+
+.historyItem {
+  width: 32vw;
+}
+
+.historyHeading {
+  font-family: Roboto;
+  font-size: 2em;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: #7e858e;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7e858e;
+  height: 7vh;
+}
+
+.para1 {
+  width: 8vw;
+  font-size: 1em;
+  font-family: Roboto;
+  text-align: left;
+  font-weight: 800;
+  color: #1e293b;
+  margin-left: 1vw;
+}
