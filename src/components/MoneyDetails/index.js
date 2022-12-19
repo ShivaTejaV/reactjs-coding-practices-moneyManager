@@ -1,33 +1,45 @@
 import './index.css'
 
-const TransactionItem = props => {
-  const {transactionDetails, deleteTransaction} = props
-  const {id, title, amount, type} = transactionDetails
-
-  const onDeleteTransaction = () => {
-    deleteTransaction(id)
-  }
+const MoneyDetails = props => {
+  const {balanceAmount, incomeAmount, expensesAmount} = props
 
   return (
-    <li className="table-row">
-      <p className="transaction-text">{title}</p>
-      <p className="transaction-text">Rs {amount}</p>
-      <p className="transaction-text">{type}</p>
-      <div className="delete-container">
-        <button
-          className="delete-button"
-          type="button"
-          onClick={onDeleteTransaction}
-        >
-          <img
-            className="delete-img"
-            src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
-            alt="delete"
-          />
-        </button>
+    <div className="money-details-container">
+      <div className="balance-container">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
+          alt="balance"
+          className="details-img"
+        />
+        <div>
+          <p className="details-text">Your Balance</p>
+          <p className="details-money">Rs {balanceAmount}</p>
+        </div>
       </div>
-    </li>
+      <div className="income-container">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
+          alt="income"
+          className="details-img"
+        />
+        <div>
+          <p className="details-text">Your Income</p>
+          <p className="details-money">Rs {incomeAmount}</p>
+        </div>
+      </div>
+      <div className="expenses-container">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
+          alt="expenses"
+          className="details-img"
+        />
+        <div>
+          <p className="details-text">Your Expenses</p>
+          <p className="details-money">Rs {expensesAmount}</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default TransactionItem
+export default MoneyDetails
