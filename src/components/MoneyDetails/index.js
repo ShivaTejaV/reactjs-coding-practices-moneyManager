@@ -1,48 +1,41 @@
 import './index.css'
 
 const MoneyDetails = props => {
-  const {list, getExpenses} = props
-  const getMoneyDetails = () => {
-    getExpenses(list)
-  }
-
-  const {updatedExpenses, updatedIncome, updatedBalance} = getMoneyDetails()
+  const {balanceAmount, incomeAmount, expensesAmount} = props
 
   return (
-    <div className="middleContainer">
-      <div className="tab balanceTab">
+    <div className="money-details-container">
+      <div className="balance-container">
         <img
-          alt="balance"
           src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
-          className="image1"
+          alt="balance"
+          className="details-img"
         />
         <div>
-          <p className="tabName">Your Balance</p>
-          <p className="displayAmount">RS {updatedBalance}</p>
+          <p className="details-text">Your Balance</p>
+          <p className="details-money">Rs {balanceAmount}</p>
         </div>
       </div>
-
-      <div className="tab incomeTab">
+      <div className="income-container">
         <img
-          alt="income"
           src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
-          className="image1"
+          alt="income"
+          className="details-img"
         />
         <div>
-          <p className="tabName">Your Income</p>
-          <p className="displayAmount">RS {updatedIncome}</p>
+          <p className="details-text">Your Income</p>
+          <p className="details-money">Rs {incomeAmount}</p>
         </div>
       </div>
-
-      <div className="tab expensesTab">
+      <div className="expenses-container">
         <img
-          alt="expenses"
           src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
-          className="image1"
+          alt="expenses"
+          className="details-img"
         />
         <div>
-          <p className="tabName">Your Expenses</p>
-          <p className="displayAmount">RS {updatedExpenses}</p>
+          <p className="details-text">Your Expenses</p>
+          <p className="details-money">Rs {expensesAmount}</p>
         </div>
       </div>
     </div>
