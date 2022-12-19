@@ -1,34 +1,57 @@
-/* Write your CSS here */
-.listItem {
+.table-row {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  border-color: #7e858e;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #7e858e;
-  height: 7vh;
+  justify-content: space-between;
+  list-style-type: none;
+  border-bottom: 1px solid #cbd5e1;
+  border-right: 1px solid #cbd5e1;
+  border-left: 1px solid #cbd5e1;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.para2 {
-  width: 8vw;
-  font-size: 1em;
-  font-family: Roboto;
-  text-align: left;
-  font-weight: 500;
-  color: #334155;
+@media screen and (min-width: 768px) {
+  .table-row {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.transaction-text {
   color: #475569;
-  margin-left: 1vw;
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 30%;
 }
 
-.deleteButton {
-  height: 5vh;
+@media screen and (min-width: 768px) {
+  .transaction-text {
+    font-size: 14px;
+  }
+}
+
+.delete-container {
+  display: flex;
+  width: 10%;
+}
+
+.delete-button {
+  background: transparent;
+  outline: none;
   border: none;
-  background-color: transparent;
+  cursor: pointer;
 }
 
-.deleteIcon {
-  height: 4vh;
-  padding-right: 2vw;
+.delete-img {
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-img {
+    margin-right: 24px;
+  }
 }
